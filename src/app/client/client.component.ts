@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { ClientService } from '../client.service';
 import { AddclientComponent } from '../addclient/addclient.component';
 import { Client } from '../client.model';
+import { Fournisseur } from '../fournisseur.model';
 
 @Component({
   selector: 'app-client',
@@ -37,7 +38,7 @@ export class ClientComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.disableClose = true;
     dialogConfig.width="50%";
-    //dialogConfig.data="gdddd";
+    dialogConfig.data="gdddd";
     this.matDialog.open(AddclientComponent, dialogConfig);
   }
   removeData(id: number) {
@@ -52,7 +53,7 @@ export class ClientComponent {
         error => console.log(error));
   }
   }
-  selectData(item : Client) {
+  selectData(item : Fournisseur) {
     this.crudApi.choixmenu = "M";
     this.crudApi.dataForm = this.fb.group(Object.assign({},item));
     const dialogConfig = new MatDialogConfig();
