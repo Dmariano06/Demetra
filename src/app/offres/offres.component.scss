@@ -1,0 +1,17 @@
+.offres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 50px; /* Optionnel : cela peut être ajusté en fonction de vos besoins */
+}
+
+.offres p {
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0; /* Pour supprimer la marge par défaut du paragraphe */
+}
