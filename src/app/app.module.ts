@@ -19,7 +19,10 @@ import { AddscategorieComponent } from './addscategorie/addscategorie.component'
 import { AddclientComponent } from './addclient/addclient.component';
 import { ClientComponent } from './client/client.component';
 import { FournisseurComponent } from './fournisseur/fournisseur.component';
-import { AddfournisseurComponent } from './addfournisseur/addfournisseur.component'
+import { AddfournisseurComponent } from './addfournisseur/addfournisseur.component';
+import { InterfaceComponent } from './interface/interface.component';
+import { ArticleComponent } from './article/article.component';
+import { AddarticleComponent } from './addarticle/addarticle.component'
 
 const MATERIAL_MODULES = [MatToolbarModule];
 
@@ -36,7 +39,10 @@ const MATERIAL_MODULES = [MatToolbarModule];
     AddclientComponent,
     ClientComponent,
     FournisseurComponent,
-    AddfournisseurComponent
+    AddfournisseurComponent,
+    InterfaceComponent,
+    ArticleComponent,
+    AddarticleComponent
   ],
   imports: [
     BrowserModule,
